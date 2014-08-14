@@ -14,10 +14,10 @@ import lambda.parser.*;
  */
 public class Driver {
     public static void main(String[] args) {
-    System.out.println(LambdaTermParser.parse("Y = x;").toString());
-    /*System.out.println(parse("\\ x . x"));
-    System.out.println(parse("x y"));
-    System.out.println(parse("\\z.x z"));
-    System.out.println(parse("\\x.(y)y(\\z.x z)"));*/
+    System.out.println(LambdaTermParser.parse("Y = x y;x = \\ x . x;").toString());
+    System.out.println(LambdaTermParser.parse("x = \\ x . x;"));
+    //System.out.println(parse("x y"));
+    //System.out.println(parse("\\z.x z"));
+    //System.out.println(parse("\\x.(y)y(\\z.x z)"));*/
   }
 }
